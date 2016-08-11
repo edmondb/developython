@@ -10,4 +10,7 @@ Python Training for the DEVELOP program.
 5. `conda install gdal netCDF4 basemap`
 6. `conda upgrade numpy`
 
-Ignore any warnings (for now) regarding a GDAL_DATA environment variable.
+TODO:
+
+1. Edit and set GDAL_DATA env variable (for reprojections; gcs.csv file).
+2. Connect arcpy with Anaconda exterior to ArcGIS.
