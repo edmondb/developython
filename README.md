@@ -17,4 +17,4 @@ Python Training for the DEVELOP program.
 	10.3 `gdalwarp -t_srs "EPSG:32645" 1400412014302_to_1400412014206.tif test.tif`
 
 TODO:
-2. Connect arcpy with Anaconda exterior to ArcGIS.
+1. Connect arcpy with Anaconda exterior to ArcGIS.
