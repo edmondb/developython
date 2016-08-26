@@ -13,7 +13,8 @@ Python Training for the DEVELOP program.
 7. `conda update gdal` __(mine was already updated)__
 8. `set GDAL_DATA = C:\Users\TEMP\AppData\Local\Continuum\Anaconda2\Lib\site-packages\gdal-2.1.1-np111py27_2\Library\Share\gdal` __(didn't have to set this)__
 
-To Test GDAL install: 
+To Test GDAL install:
+
 1. Download this [file](https://drive.google.com/file/d/0B9m0kGaHo6cnM0JxbkM5aFZvN28/view?usp=sharing)
 2. `cd` to Downloads directory
 3. `gdalwarp -t_srs "EPSG:32645" 1400412014302_to_1400412014206.tif test.tif`
