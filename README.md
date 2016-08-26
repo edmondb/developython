@@ -9,7 +9,7 @@ Python Training for the DEVELOP program.
 4. Start -> All Programs -> Anaconda 2 (64-Bit) -> Anaconda Prompt
 5. `conda install netCDF4 basemap`
 6. `conda install -c conda-forge gdal`
-    no `conda upgrade numpy`?
+    * no `conda upgrade numpy`?
 7. `conda update gdal` __(mine was already updated)__
 8. `set GDAL_DATA = C:\Users\TEMP\AppData\Local\Continuum\Anaconda2\Lib\site-packages\gdal-2.1.1-np111py27_2\Library\Share\gdal` __(didn't have to set this)__
 
