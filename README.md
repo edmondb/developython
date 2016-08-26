@@ -21,9 +21,9 @@ To Test GDAL install:
 How do we know it worked?
 I got this output:
 
-  (C:\Users\ebsmith2\AppData\Local\Continuum\Anaconda2) C:\Users\ebsmith2>gdalwarp
- -t_srs "EPSG:32645" Downloads\1400412014302_to_1400412014206.tif test.tif
-0...10...20...30...40...50...60...70...80...90...100 - done.
+    (C:\Users\ebsmith2\AppData\Local\Continuum\Anaconda2) C:\Users\ebsmith2>gdalwarp
+    -t_srs "EPSG:32645" Downloads\1400412014302_to_1400412014206.tif test.tif
+    0...10...20...30...40...50...60...70...80...90...100 - done.
 
 # TODO:
 1. Connect arcpy with Anaconda exterior to ArcGIS.
