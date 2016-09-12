@@ -1,0 +1,32 @@
+# Download hdf MODIS file: 
+ftp://ladsweb.nascom.nasa.gov/allData/6/MOD13Q1/2013/289/MOD13Q1.A2013289.h28v07.006.2015269222232.hdf
+
+cd Downloads/
+
+# Get some info 
+gdalinfo MOD13Q1.A2013289.h28v07.006.2015269222232.hdf
+
+# Save that info to a file 
+gdalinfo MOD13Q1.A2013289.h28v07.006.2015269222232.hdf > info.txt
+
+# Open info.txt in editor and look for subdatasets. Then extract B1 and B2 
+
+gdal_translate -of Gtiff HDF4_EOS:EOS_GRID:"MOD09Q1.A2011289.h28v07.006.2015223013436.hdf":MOD_Grid_250m_Surface_Reflectance:sur_refl_b01 b01.tif
+
+gdal_translate -of Gtiff HDF4_EOS:EOS_GRID:"MOD09Q1.A2011289.h28v07.006.2015223013436.hdf":MOD_Grid_250m_Surface_Reflectance:sur_refl_b02 b02.tif
+
+# Open this file in arcgis. Looks funky right? Reproject it to WGS 84
+gdalwarp b01.tif b01_prj.tif -t_srs EPSG:4326
+
+# Not interested in the whole area? Clip it.
+
+# Download shapefile for bbox 
+https://drive.google.com/open?id=0B8a9e8PWHP0JZXVFdVpBd3gyaWM
+
+# Clip it 
+gdalwarp -cutline Cambodia.shp -crop_to_cutline -dstalpha b01_prj.tif b01_clip.tif
+
+gdalwarp -cutline Cambodia.shp -crop_to_cutline -dstalpha b02_prj.tif b02_clip.tif
+
+
+# You can do all this stuff from inside python too. 
