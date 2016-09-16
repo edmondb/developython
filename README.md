@@ -10,6 +10,7 @@ Python Training for the DEVELOP program.
 5. `conda install netCDF4 basemap`
 6. `conda install conda=4.1.11`
 7. `conda install -c conda-forge gdal`
+8. `conda install h5py`
 8. Close your Anaconda Prompt to retain the changes and then open again to test installation.
 
 To Test GDAL install:
