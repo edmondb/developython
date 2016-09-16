@@ -8,9 +8,9 @@ Python Training for the DEVELOP program.
 3. Do not add it to your path (can change depending upon use with GDAL).
 4. Start -> All Programs -> Anaconda 2 (64-Bit) -> Anaconda Prompt
 5. `conda install netCDF4 basemap`
-6. `conda install conda=`
+6. `conda install conda=4.1.11`
 7. `conda install -c conda-forge gdal`
-8. Close your Anaconda Prompt to retain the changes.
+8. Close your Anaconda Prompt to retain the changes and then open again to test installation.
 
 To Test GDAL install:
 
