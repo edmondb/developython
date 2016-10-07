@@ -15,8 +15,10 @@ Python Training for the DEVELOP program.
 
 ### And if all else fails:
 
-1. `conda create -n GDAL python=2.7 gdal -c conda-forge`
-2. `activate GDAL`
+1. `conda install conda=4.1.11`
+2. Exit Anaconda Prompt
+3. `conda create -n GDAL python=2.7 gdal -c conda-forge`
+4. `activate GDAL`
 
 To Test GDAL install:
 
