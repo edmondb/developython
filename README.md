@@ -13,6 +13,10 @@ Python Training for the DEVELOP program.
 8. `conda install h5py`
 8. Close your Anaconda Prompt to retain the changes and then open again to test installation.
 
+And if all else fails:
+1. `conda create -n GDAL python=2.7 gdal -c conda-forge`
+2. `activate GDAL`
+
 To Test GDAL install:
 
 1. Download this [file](https://drive.google.com/file/d/0B9m0kGaHo6cnM0JxbkM5aFZvN28/view?usp=sharing)
