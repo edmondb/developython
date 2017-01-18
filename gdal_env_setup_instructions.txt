@@ -1,0 +1,34 @@
+# This works as of 12/15/16
+# First, Download anaconda
+
+# Check version
+conda -V
+
+# Update
+conda update conda
+
+# Check again. 
+conda -V
+
+# This prints : "4.2.13-py27_0"
+
+# Create gdal virtualenv
+conda create --name gdal_conda
+
+# Activate it
+source activate yourenvname
+
+# Install gdal in the virtualenv
+conda install --name gdal_conda gdal
+
+# List packages in the virtualenv
+conda list
+
+# Set environment variable. 
+export GDAL_DATA=/Users/aakashahamed/anaconda2/envs/gdal_conda/share/gdal # or whatever path
+
+# Test that the install works. Follow instructions here: https://github.com/edmondb/developython
+
+# Install some other libs
+conda install --name gdal_conda scikit-learn
+
