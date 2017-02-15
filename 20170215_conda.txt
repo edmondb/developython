@@ -1,0 +1,27 @@
+The following NEW packages will be INSTALLED:
+
+    gdal:      2.1.0-py27_0
+    geos:      3.5.0-vc9_0       [vc9]
+    hdf4:      4.2.12-vc9_0      [vc9]
+    kealib:    1.4.6-vc9_0       [vc9]
+    libgdal:   2.1.0-vc9_0       [vc9]
+    libnetcdf: 4.3.3.1-vc9_4     [vc9]
+    proj4:     4.9.2-vc9_0       [vc9]
+    xerces-c:  3.1.4-vc9_0       [vc9]
+
+The following packages will be UPDATED:
+
+    anaconda:  4.3.0-np111py27_0 --> custom-py27_0
+
+The following packages will be DOWNGRADED due to dependency conflicts:
+
+    jpeg:      9b-vc9_0          [vc9] --> 8d-vc9_2      [vc9]
+    libtiff:   4.0.6-vc9_3       [vc9] --> 4.0.6-vc9_2   [vc9]
+    pillow:    4.0.0-py27_0      --> 3.4.2-py27_0
+    qt:        5.6.2-vc9_3       [vc9] --> 5.6.2-vc9_0   [vc9]
+
+
+The following NEW packages will be INSTALLED:
+
+    libnetcdf: 4.3.3.1-vc9_4     [vc9]
+    netcdf4:   1.2.4-np111py27_0
