@@ -1,4 +1,4 @@
-# This works as of 12/15/16
+# This works as of 12/15/16 (02/15/2017 - conda version has been updated to 4.3)
 # First, Download anaconda
 
 # Check version
