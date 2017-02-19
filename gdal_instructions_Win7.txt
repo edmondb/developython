@@ -13,4 +13,7 @@
 	- To test GDAL installation in general, type 'gdal_translate N10E034.hgt N10E034.tif'
 	- There should now be a GeoTIFF version of this file
 	- To test whether GDAL_DATA is set properly, type 'gdalwarp -t_srs "EPSG:32636" N10E034.tif N10E034_utm.tif'
-	- There should now be a GeoTIFF version of the file in UTM Zone 36 N projection (originally in unprojected WGS84). Confirm that both new files look reasonable in a GIS.
+	- There should now be a GeoTIFF version of the file in UTM Zone 36 N projection (originally in unprojected WGS84). 
+	  Confirm that both new files look reasonable in a GIS.
+9. If you wish to use Jupyter Notebook or Spyder with GDAL, you must install and launch them through this environment
+10. If you wish to deactivate GDAL environment, type 'deactivate' in prompt
