@@ -1,0 +1,16 @@
+1. Open Anaconda prompt
+2. Create GDAL environment and install GDAL with 'conda create -n gdal_works gdal'
+3. Navigate to environment folder with 'cd %LOCALAPPDATA%\Continuum\Anaconda2\envs\gdal_works'
+4. They should exist, but if they do not:
+	- mkdir .\etc\conda\activate.d
+	- mkdir .\etc\conda\deactivate.d
+5. Create env_vars.bat in activate.d and add text 'set GDAL_DATA=%LOCALAPPDATA%\Continuum\Anaconda2\envs\gdal_works\Library\share\gdal'
+6. Create env_vars.bat in deactivate.d and add text 'set GDAL_DATA='
+7. Back in prompt, type 'activate gdal_works'
+8. To test:
+	- Download https://drive.google.com/file/d/0B8toI67HoVSrdkxYc2ZSX3NGcUk/view?usp=sharing
+	- In Anaconda prompt, navigate to folder with above file, which is an SRTM tile in HGT format
+	- To test GDAL installation in general, type 'gdal_translate N10E034.hgt N10E034.tif'
+	- There should now be a GeoTIFF version of this file
+	- To test whether GDAL_DATA is set properly, type 'gdalwarp -t_srs "EPSG:32636" N10E034.tif N10E034_utm.tif'
+	- There should now be a GeoTIFF version of the file in UTM Zone 36 N projection (originally in unprojected WGS84). Confirm that both new files look reasonable in a GIS.
