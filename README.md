@@ -8,6 +8,5 @@ Python Training for the DEVELOP program.
 3. Start -> All Programs -> Anaconda 2 (32-Bit) -> Anaconda Prompt
 4. _Create script for this:_ `Copy C:\Python27\ArcGIS10.3\Lib\site-packages\Desktop10.3.pth C:\Users\`__username__`\AppData\Local\Continuum\Anaconda2\site_packages\`
 5. `conda update conda`
-6. `conda install gdal netCDF4`
-
-_To Do:_ Correct GDAL_DATA env var to be `C:\Users\`__username__`\AppData\Local\Continuum\Anaconda2\Library\share\gdal`
+6. `conda install netCDF4`
+7. _Write script for most of this as well:_ Follow GDAL setup instructions.
