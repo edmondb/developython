@@ -27,7 +27,7 @@ conda list
 # Set environment variable. 
 export GDAL_DATA=/Users/aakashahamed/anaconda2/envs/gdal_conda/share/gdal # or whatever path
 
-# Test that the install works. Follow instructions here: https://github.com/edmondb/developython
+# Test that the install works. See Windows 7 instructions.
 
 # Install some other libs
 conda install --name gdal_conda scikit-learn
