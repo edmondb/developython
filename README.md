@@ -1,7 +1,5 @@
-# developython
-
 ![logo](DEVELOP_logo.png)
-
+---
 Python Training for the DEVELOP program.
 
 # Setup Instructions
